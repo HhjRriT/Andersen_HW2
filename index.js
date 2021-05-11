@@ -1,5 +1,3 @@
-"use strict";
-
 function makeObjectDeepCopy(orig) {
     if (typeof (orig) !== "object") {
         return orig;
@@ -60,8 +58,4 @@ myIterable[Symbol.iterator] = function () {
             }
         }
     }
-}
-
-for (let i of myIterable) {
-    console.log(i)
 }
